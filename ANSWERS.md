@@ -1,0 +1,2 @@
+## Question 2
+The problem that can arise here is the n+1 problem where we make a call for the books and then a call for every property of each book. This would be lazy loading the books. This may not seem like a problem right now as we are accessing very little data, but with more and more data and more and more users trying to access the data this can become a big problem. An approach to fix this is eager loading in which we do one or fewer more expensive calls to get all of the data we need instead of making many smaller calls to the database for everything we need. 
